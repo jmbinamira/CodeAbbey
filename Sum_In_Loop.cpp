@@ -12,7 +12,6 @@ Output:
 int main() {
     int n, x, sum = 0;
 
-    printf("\n");
     scanf("%d", &n);        //Reads the 1st line
 
     for (int i = 0; i < n; ++i) {
@@ -20,7 +19,7 @@ int main() {
         sum += x;
     }
 
-    printf("\n%d", sum);
+    printf("%d", sum);
 
     return 0;
 }
