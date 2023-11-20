@@ -1,6 +1,6 @@
 /*
 Input: 1 2
-Outpu: 3
+Output: 3
 */
 
 #include <iostream>
