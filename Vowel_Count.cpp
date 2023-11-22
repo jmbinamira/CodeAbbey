@@ -31,7 +31,7 @@ int main() {
                 ++vowelCount;
             }
         }
-        cout << vowelCount << " ";
+        cout << vowelCount << endl;
     }
 
     return 0;
