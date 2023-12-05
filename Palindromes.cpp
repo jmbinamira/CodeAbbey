@@ -18,21 +18,33 @@ int main() {
     int n1 = stoi(line);
 
     for (int n2 = 0; n2 < n1; ++n2) {
-        string userInput, reversed;
+        string userInput, cleanUserInput, reversed;
         getline(cin, userInput);
 
-        for (int n3 = userInput.size() - 1; n3 >= 0; --n3) {  //Reverses the word
-            reversed += userInput[n3];
+        //Removes spaces/characters. userInput IS NOW cleanUserInput
+        for (int n3 = 0; n3 < userInput.size(); ++n3) {  
+            if (userInput[n3] != ' ' && userInput[n3] != ',' && userInput[n3] != '!' && userInput[n3] != '?' && userInput[n3] != '-') {
+                cleanUserInput.push_back(userInput[n3]);
+            }   
         }
 
-        if (userInput == reversed) {
+        //Converts cleanUserInput to lowercase
+        for (int n3 = 0; n3 < cleanUserInput.size(); ++n3) {
+            cleanUserInput[n3] = tolower(cleanUserInput[n3]);
+        }
+
+        //Reverses cleanUserInput
+        for (int n3 = cleanUserInput.size() - 1; n3 >= 0; --n3) {
+            reversed += cleanUserInput[n3];
+        }
+
+        if (cleanUserInput == reversed) {
             cout << "Y " << endl;
         }
-
         else {
             cout << "N " << endl;
         }
-
-        cout << userInput << "\n" << reversed << endl;
     }
+
+    return 0;
 }
