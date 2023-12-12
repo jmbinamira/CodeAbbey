@@ -1,5 +1,2 @@
-4
-abracadabra
-pear tree
-o a kak ushakov lil vo kashu kakao
-my pyx
+6
+3 1 4 1 5 9
