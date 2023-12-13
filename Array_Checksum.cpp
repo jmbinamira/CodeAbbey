@@ -19,13 +19,13 @@ int main() {
 
     //Adds elements to the array
     for(int n1 = 0; n1 < arraySize; ++n1) {
-        int x;
-        scanf("%d", &x);
+        long long x;
+        scanf("%lld", &x);
         checksumArray[n1] = x;
     }   
 
     //Calculation (initialize result = 0)
-    int seed = 113, limit = 10000007, result = 0;
+    long long seed = 113, limit = 10000007, result = 0;
     for(int n2 = 0; n2 < arraySize; ++n2) {
         result = (result + checksumArray[n2]) * seed;
         result %= limit;
