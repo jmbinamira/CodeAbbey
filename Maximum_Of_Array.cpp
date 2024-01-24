@@ -24,7 +24,7 @@ int main() {
     
     int maxNum = nums[0];
     int minNum = nums[0];
-    for (int i = 1; i < nums.size(); ++i) { //i = 1 and not 0 because the initial values of min/maxNum is 0
+    for (int i = 0; i < nums.size(); ++i) {
         if (nums[i] > maxNum) {
             maxNum = nums[i];
         }

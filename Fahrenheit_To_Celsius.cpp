@@ -33,6 +33,10 @@ int main() {
             result = (decPart >= 0.5) ? roundUp = ceil(celsius) : intPart;
             printf("%lf ", result);
         }
+
+        else if (celsius = 0) {
+            printf("0");
+        }
     }
 
     return 0;

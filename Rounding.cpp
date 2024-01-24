@@ -32,7 +32,7 @@ int main() {
         } 
         
         if (quotient < 0) {
-            result = (decPart <= -0.5) ? intPart+= -1 : intPart;
+            result = (decPart <= -0.5) ? intPart += -1 : intPart; 
             printf("%lf\n", result);
         }
     }
